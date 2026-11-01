@@ -3,9 +3,10 @@ const fs = require('fs');
 const path = require('path');
 const out = process.argv[2];
 
+// Palette taken from the wall behind the profile photo (#FD8563).
 const themes = {
-  light: { bg: '#F5F6FA', border: '#E3E6EF', text: '#0F1B3D', muted: '#5B6478', primary: '#3A47FF', yellow: '#FFD23F', onYellow: '#0F1B3D', pass: '#1A7F4B', fail: '#C62828', rail: '#D5D9E6' },
-  dark:  { bg: '#0F1B3D', border: '#24305A', text: '#FFFFFF', muted: '#A9B1CC', primary: '#7B84FF', yellow: '#FFD23F', onYellow: '#0F1B3D', pass: '#4ADE80', fail: '#FF6B6B', rail: '#2C3866' },
+  light: { bg: '#FD8563', border: '#E9704E', text: '#0F1B3D', muted: '#4A1E14', primary: '#0F1B3D', ai: '#FFF4EC', sep: '#FFF4EC', rail: '#D9654A', dots: ['#0F1B3D', '#0F1B3D', '#0F1B3D'], dotOpacity: [.25, .45, .7] },
+  dark:  { bg: '#6E2A1E', border: '#8E3E2C', text: '#FFFFFF', muted: '#F6CBB9', primary: '#FD8563', ai: '#FFF4EC', sep: '#FD8563', rail: '#8E3E2C', dots: ['#FD8563', '#FD8563', '#FD8563'], dotOpacity: [.35, .6, .9] },
 };
 
 const SANS = "-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, Helvetica, Arial, sans-serif";
@@ -18,7 +19,7 @@ function svg(t) {
   const nodes = steps.map((s, i) => {
     const x = x0 + i * step;
     const isAI = s === 'session';
-    const fill = isAI ? t.yellow : t.primary;
+    const fill = isAI ? t.ai : t.primary;
     const mark = s === 'merged'
       ? `<path class="n n${i}" d="M${x - 6} ${y} l4 4 l8 -9" fill="none" stroke="${t.bg}" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>`
       : '';
@@ -43,14 +44,14 @@ function svg(t) {
   <rect x="1.5" y="1.5" width="1197" height="427" rx="22" fill="${t.bg}" stroke="${t.border}" stroke-width="3"/>
 
   <g font-family="${MONO}" font-size="20">
-    <circle cx="44" cy="40" r="7" fill="${t.fail}" opacity=".85"/>
-    <circle cx="68" cy="40" r="7" fill="${t.yellow}"/>
-    <circle cx="92" cy="40" r="7" fill="${t.pass}" opacity=".85"/>
+    <circle cx="44" cy="40" r="7" fill="${t.dots[0]}" opacity="${t.dotOpacity[0]}"/>
+    <circle cx="68" cy="40" r="7" fill="${t.dots[1]}" opacity="${t.dotOpacity[1]}"/>
+    <circle cx="92" cy="40" r="7" fill="${t.dots[2]}" opacity="${t.dotOpacity[2]}"/>
     <text x="56" y="100" fill="${t.primary}">$ <tspan fill="${t.text}">node --test steven.test.js</tspan><tspan class="cursor" fill="${t.primary}"> ▍</tspan></text>
   </g>
 
   <text x="54" y="178" font-family="${SANS}" font-size="70" font-weight="800" fill="${t.text}" letter-spacing="-1.5">Steven Roman</text>
-  <text x="56" y="222" font-family="${SANS}" font-size="28" font-weight="600" fill="${t.muted}">founder <tspan fill="${t.yellow}">·</tspan> builder</text>
+  <text x="56" y="222" font-family="${SANS}" font-size="28" font-weight="600" fill="${t.muted}">founder <tspan fill="${t.sep}">·</tspan> builder</text>
   <text x="56" y="268" font-family="${SANS}" font-size="21" fill="${t.text}">Entrepreneur first. I build pro-ready products, fast,</text>
   <text x="56" y="297" font-family="${SANS}" font-size="21" fill="${t.text}">to test them fast, and to stop them just as fast.</text>
 
