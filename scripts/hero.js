@@ -51,8 +51,8 @@ function svg(t) {
 
   <text x="54" y="178" font-family="${SANS}" font-size="70" font-weight="800" fill="${t.text}" letter-spacing="-1.5">Steven Roman</text>
   <text x="56" y="222" font-family="${SANS}" font-size="28" font-weight="600" fill="${t.muted}">founder <tspan fill="${t.yellow}">·</tspan> builder</text>
-  <text x="56" y="268" font-family="${SANS}" font-size="21" fill="${t.text}">I build the software my companies run on,</text>
-  <text x="56" y="297" font-family="${SANS}" font-size="21" fill="${t.text}">and ship it with AI agents, under rules that live in code.</text>
+  <text x="56" y="268" font-family="${SANS}" font-size="21" fill="${t.text}">Entrepreneur first. I build pro-ready products, fast,</text>
+  <text x="56" y="297" font-family="${SANS}" font-size="21" fill="${t.text}">to test them fast, and to stop them just as fast.</text>
 
   ${rail}${nodes}
 

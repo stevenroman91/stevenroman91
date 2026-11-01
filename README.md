@@ -1,36 +1,37 @@
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/hero-dark.svg">
-  <img alt="Steven Roman — founder · builder. node --test steven.test.js: ticket → Claude Code session → branch → PR → CI → merged. ~1,700 merged PRs since May 2026, 34 ADRs, 6 products shipping." src="assets/hero-light.svg">
+  <img alt="Steven Roman — founder · builder. Entrepreneur first: I build pro-ready products, fast, to test them fast and to stop them just as fast. ~1,700 merged PRs since May 2026, 34 ADRs, 6 products shipping." src="assets/hero-light.svg">
 </picture>
 
 ```
 ▶ steven roman — founder · builder
-  ✔ builds the software his companies run on
-  ✔ ships it with AI agents, under rules that live in code
-  ✔ 1 ticket = 1 Claude Code session = 1 branch = 1 PR, merged by hand
+  ✔ passionate about entrepreneurship and tech
+  ✔ not trying to be the best developer in the room
+  ✔ trying to ship pro-ready products as fast as possible
+  ✔ ...so I can test fast, and stop just as fast if I have to
+
+▶ how i work
+  ✔ build by default                     to learn the real edges of a domain
+  ✔ then decide: build or buy            with the domain mapped, not guessed
+  ✔ AI wherever it's relevant            and wherever its ROI is highest
+  ✖ "you're a better developer without AI"
+      expected: true
+      actual:   false
+      → the skill is knowing where AI belongs, not refusing it.
+  ✔ bring people along                   tech & AI acculturation, for everyone
 
 ▶ shipping
   ✔ scalecall    in-house dialer · live transcript · AI whisperer
   ✔ homotope     raster → vector (SVG, DXF, PDF) · open engine on npm
-  ✔ biex         Socratic AI tutor, ages 7–17 · the model talks, code decides
+  ✔ biex         Socratic AI tutor, ages 7–17
   ✔ éclair       AI training by job role · SDRs first
   ✔ atalaya      security-news monitoring · Latin America
   ✔ lumi         French mini-games for kids living abroad
 
-▶ principles
-  ✔ the rule lives in code, never in a prompt
-  ✔ an outage is never an empty list            "unavailable" ≠ "none"
-  ✔ every AI call is measured                   sovereign EU by default
-  ✔ a computed verdict recommends               a human click decides
-  ✖ a guard is proven red by breaking the code
-      expected: red
-      actual:   red
-      → that's how you know it guards something.
-
-ℹ tests 14
-ℹ pass 13
+ℹ tests 15
+ℹ pass 14
 ℹ fail 1 (on purpose)
-ℹ stack node · typescript · python · postgres+pgvector · railway · scaleway · claude code
+ℹ stack node · typescript · python · postgres · railway · scaleway · claude code
 ℹ duration_ms 6 months, ~1,700 merged PRs
 ```
 
@@ -45,31 +46,32 @@
 <summary>🇫🇷 <b>En français</b></summary>
 
 ```
-▶ steven roman — fondateur · bâtisseur
-  ✔ construit le logiciel sur lequel tournent ses entreprises
-  ✔ le livre avec des agents IA, sous des règles écrites en code
-  ✔ 1 ticket = 1 session Claude Code = 1 branche = 1 PR, mergée à la main
+▶ steven roman — fondateur · builder
+  ✔ passionné d'entrepreneuriat et de tech
+  ✔ ne cherche pas à être le meilleur développeur
+  ✔ cherche à sortir des produits prêts pour la prod, le plus vite possible
+  ✔ ...pour tester vite, et arrêter tout aussi vite s'il le faut
+
+▶ ma façon de faire
+  ✔ build par défaut                     pour comprendre l'étendue d'un domaine
+  ✔ puis trancher : build ou buy         domaine cartographié, pas deviné
+  ✔ l'IA partout où elle est pertinente  et là où son ROI est le plus grand
+  ✖ « on est meilleur quand on code sans IA »
+      attendu : vrai
+      obtenu :  faux
+      → le savoir-faire, c'est savoir où mettre l'IA, pas la refuser.
+  ✔ embarquer les autres                 acculturation tech & IA, pour tous
 
 ▶ en production
   ✔ scalecall    dialer maison · transcript live · souffleur IA
   ✔ homotope     raster → vecteur (SVG, DXF, PDF) · moteur open source
-  ✔ biex         tuteur IA socratique, 7–17 ans · le modèle parle, le code décide
+  ✔ biex         tuteur IA socratique, 7–17 ans
   ✔ éclair       formation à l'IA par métier · les SDR d'abord
   ✔ atalaya      veille sécurité automatisée · Amérique latine
   ✔ lumi         jeux de français pour enfants expatriés
 
-▶ principes
-  ✔ la règle vit en code, jamais en prompt
-  ✔ une panne n'est jamais une liste vide       « indisponible » ≠ « aucun »
-  ✔ tout appel IA se mesure                     souverain UE par défaut
-  ✔ un verdict calculé recommande               le clic humain tranche
-  ✖ une garde se prouve rouge en cassant le code
-      attendu : rouge
-      obtenu :  rouge
-      → c'est comme ça qu'on sait qu'elle garde quelque chose.
-
-ℹ tests 14
-ℹ pass 13
+ℹ tests 15
+ℹ pass 14
 ℹ fail 1 (exprès)
 ℹ duration_ms 6 mois, ~1 700 PRs mergées
 ```

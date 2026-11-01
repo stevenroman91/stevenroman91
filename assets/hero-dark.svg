@@ -20,8 +20,8 @@
 
   <text x="54" y="178" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, Helvetica, Arial, sans-serif" font-size="70" font-weight="800" fill="#FFFFFF" letter-spacing="-1.5">Steven Roman</text>
   <text x="56" y="222" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, Helvetica, Arial, sans-serif" font-size="28" font-weight="600" fill="#A9B1CC">founder <tspan fill="#FFD23F">·</tspan> builder</text>
-  <text x="56" y="268" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, Helvetica, Arial, sans-serif" font-size="21" fill="#FFFFFF">I build the software my companies run on,</text>
-  <text x="56" y="297" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, Helvetica, Arial, sans-serif" font-size="21" fill="#FFFFFF">and ship it with AI agents, under rules that live in code.</text>
+  <text x="56" y="268" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, Helvetica, Arial, sans-serif" font-size="21" fill="#FFFFFF">Entrepreneur first. I build pro-ready products, fast,</text>
+  <text x="56" y="297" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, Helvetica, Arial, sans-serif" font-size="21" fill="#FFFFFF">to test them fast, and to stop them just as fast.</text>
 
   <line x1="76" y1="352" x2="736" y2="352" stroke="#2C3866" stroke-width="3"/>
     <circle class="n n0" cx="76" cy="352" r="13" fill="#7B84FF" stroke="#7B84FF" stroke-width="3"/>
